@@ -24,7 +24,7 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 	<link rel="stylesheet/less" href="style.less">
 
-2. Download [LESS](www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+2. Download [LESS](http://lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
@@ -76,7 +76,7 @@ Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes d
 		border-bottom: 2px solid red;
 	}
 
-In dit voorbeeld wordt de class borderline voor twee div’s gebruikt en kan eventueel aangevuld worden met extra attributen die specifiek voor dat element bedoeld zijn. Net als met de variabelen bevorderen mixins de beheerbaarheid. Slechts de mixin hoeft aangepast te worden om effect te hebben op alle gelinkte elementen.
+In dit voorbeeld wordt de class border-line voor twee div’s gebruikt en kan eventueel aangevuld worden met extra attributen die specifiek voor dat element bedoeld zijn. Net als met de variabelen bevorderen mixins de beheerbaarheid. Slechts de mixin hoeft aangepast te worden om effect te hebben op alle gelinkte elementen.
 
 Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten bevatten. Deze argumenten worden op dezelfde wijze als variabelen gedeclareerd (@):
 
@@ -353,4 +353,4 @@ En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te
 Zoals je hopelijk hebt ervaren is LESS een manier om een hoger niveau van beheerbaarheid en structuur in je stylesheets te integreren. In de tutorial hierboven is gewerkt vanuit een bestaand CSS bestand dat om werd gezet naar een LESS bestand. De bedoeling is dat je vanaf nu meteen begint met een LESS stylesheet en dus al van te voren na gaat denken over eventuele variabelen, mixins en nested rules. Met de juiste mindset en skills kun je de productietijd inkorten en de flexibiliteit van je stylesheets enorm vergroten. Write less with LESS.
 
 ##Ontdek
-Als je de variabelen en mixins onder de knie hebt kun je bij [LESSCSS](www.lesscss.org) terecht voor meer functionaliteiten en voorbeelden. Ook is het dan aan te raden om [SASS](http://sass-lang.com/) eens een kans te geven. Dit is een soortgelijke stylesheet language die iets meer functionaliteiten bevat en daardoor een iets hogere instapdrempel kent.
+Als je de variabelen en mixins onder de knie hebt kun je bij [LESSCSS](http://lesscss.org) terecht voor meer functionaliteiten en voorbeelden. Ook is het dan aan te raden om [SASS](http://sass-lang.com/) eens een kans te geven. Dit is een soortgelijke stylesheet language die iets meer functionaliteiten bevat en daardoor een iets hogere instapdrempel kent.
