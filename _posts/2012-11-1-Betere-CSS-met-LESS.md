@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Betere CSS met LESS
+published: true
 ---
-
 
 Als je globaal naar websites kijkt, bestaan ze uit HTML voor de structuur en CSS voor de opmaak. Stylesheets in CSS hebben niet een hoge instapdrempel. Het is een taal met een eenvoudige structuur waar je vooral de vele properties die je kan gebruiken moet leren. Het nadeel hiervan is dat je niet veel mogelijkheden hebt qua ordening en automatisering.
 
@@ -22,9 +22,8 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
-``` html
+
 <link rel="stylesheet/less" href="style.less">
-```
 
 2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
