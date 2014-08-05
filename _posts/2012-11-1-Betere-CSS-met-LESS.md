@@ -46,18 +46,17 @@ Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarv
 
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
-<code>
+``` css
 @blue: #0000FF;
 div.container {
 	color: @blue;
 	background: @blue;
 }
-
 div.text {
 	color: @blue;
 	border: 1px solid @blue;
 }
-</code>
+```
 
 Hier zie je dat de variabele bij verschillende classes en attributen wordt gebruikt. Dit scheelt code en denkwerk, maar geeft je ook een groot voordeel in de vorm van beheerbaarheid. Stel dat je tijdens je project er voor kiest om toch een lichtere tint blauw te gaan gebruiken. In plaats dat je alle attributen moet veranderen hoef je slechts de variabele aan te passen. Geldt deze tint blauw slechts voor een paar van de gekoppelde attributen, dan maak je gemakkelijk een nieuwe variabele hiervoor aan. Easy peasy.
 
