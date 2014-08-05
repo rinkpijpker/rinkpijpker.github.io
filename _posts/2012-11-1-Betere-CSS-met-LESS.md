@@ -22,7 +22,7 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
-```html
+``` html
 <link rel="stylesheet/less" href="style.less">
 ```
 
@@ -30,7 +30,7 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
-```html
+``` html
 <script src=”less.js”></script>
 ```
 
@@ -40,13 +40,13 @@ Het is hierbij van belang dat deze coderegel altijd na de import van de styleshe
 
 Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarvoor je ze kan gebruiken. Een variabele bevat namelijk een stukje informatie dat voor verdere toepassing gebruikt kan worden. En zo werken ze ook bij LESS.
 
-```css 
+``` css 
 @blue: #0000FF;
 ```
 
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
-```css
+``` css
 @blue: #0000FF;
 
 div.container {
@@ -66,7 +66,7 @@ Hier zie je dat de variabele bij verschillende classes en attributen wordt gebru
 
 Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes die zelf attributen bevatten en die geembed kunnen worden in classes. Een voorbeeld van zo’n mixin met toepassing:
 
-```css
+``` css
 .borderline {
 	border-left: 1px solid #000;
 	border-right: 1px solid #fff;
@@ -87,7 +87,7 @@ In dit voorbeeld wordt de class borderline voor twee div’s gebruikt en kan eve
 
 Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten bevatten. Deze argumenten worden op dezelfde wijze als variabelen gedeclareerd (@):
 
-```css
+``` css
 .borderline(@number: 5px, @color: #fff) {
 	border: @number solid @color;
 	margin: @number;
@@ -119,7 +119,7 @@ Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als
 
 Waar ik mij vaak aan ergerde waar de lange selectors die ontstonden in mijn CSS om de ‘inherentance’ van elementen te specificeren. Bijvoorbeeld:
 
-```css
+``` css
 div.container > h2.heading {
 	font-size: 30px;
 
@@ -245,7 +245,7 @@ Nu de koppeling met LESS is gemaakt, kunnen we aan de slag met de opmaak. We beg
 
 Als we snel door de code scannen zijn er drie kleuren die vaak gebruikt worden: #1166aa, #575757 en #979797. Deze gaan we bovenin in de stylesheet definiëren als variabelen.
 
-```css
+``` css
 @blue1: #1166aa;
 @grey1: #575757;
 @grey2: #979797;
@@ -253,23 +253,23 @@ Als we snel door de code scannen zijn er drie kleuren die vaak gebruikt worden: 
 
 Vervolgens gaan we in de stylesheet op zoek naar deze hex kleur codes en vervangen we ze met de bijbehorende variabele. Bijvoorbeeld:
 
-```css
+``` css
 color: #575757;
 ```
 
 Vervangen we met:
 
-```css
+``` css
 color: @grey1;
 ```
 
-```css
+``` css
 border: 1px solid #1166aa;
 ```
 
 Vervangen we met:
 
-```css
+``` css
 border: 1px solid @blue1;
 ````
 
@@ -280,7 +280,7 @@ In mixins kunnen we regels CSS code stoppen die vaak bij elkaar in een element w
 
 In onze CSS hebben we bij ons article gebruikt gemaakt van een CSS3 gradient. Door hier een mixin van te maken kunnen we deze code makkelijk manipuleren en eventueel vaker toepassen als er een element bijkomt die ook deze code nodig heeft. De mixin:
 
-```css
+``` css
 .gradient {
     background: #efefef;
     background: -moz-linear-gradient(top,  #efefef 0%, #f4f4f4 100%);
@@ -291,7 +291,7 @@ In onze CSS hebben we bij ons article gebruikt gemaakt van een CSS3 gradient. Do
 
 Vervolgens kunnen we deze gebruiken voor ons article, door de background attributen bij article {} te vervangen met de mixin. Het resultaat:
 
-```css
+``` css
 article {
     display: block;
     position: relative;
@@ -305,7 +305,7 @@ article {
 
 Deze mixin kan nu makkelijk worden toegepast bij elementen, maar is niet super flexibel. Hij werkt namelijk alleen met de kleuren die gedefinieerd zijn binnen de mixin. Daarom koppelen we twee argumenten aan de mixin:
 
-```css
+``` css
 .gradient (@color1: #efefef, @color2: #f4f4f4) {
     background: @color1;
     background: -moz-linear-gradient(top,  @color1 0%, @color2 100%);
@@ -318,7 +318,7 @@ De mixin kent nu de argumenten @color1 en @color2 die in dit voorbeeld een stand
 
 Een tweede mixin kunnen we definiëren voor een paar attributen van het font. Namelijk de font-family, font-size en line-height. De mixin:
 
-```css
+``` css
 .font (@family: sans-serif, @fontsize: 18px, @lineheight: 20px) {
     font-family: @family;
     font-size: @fontsize; 
@@ -328,7 +328,7 @@ Een tweede mixin kunnen we definiëren voor een paar attributen van het font. Na
 
 Ook deze mixin bevat variabelen met standaard waardes. Nu kunnen we in de stylesheet op zoek naar elementen die deze drie attributen gebruiken. Door ze te vervangen met de mixin en eventuele aangepaste waardes schonen we de code mooi op. Hieronder een korte opsomming van alle aangepaste elementen die gebruik maken van de .font mixin:
 
-```css
+``` css
 header > h1 {
     float: left;
     color: @grey2;
