@@ -24,7 +24,7 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 	<link rel="stylesheet/less" href="style.less">
 
-2. Download [LESS](http://lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+2. Download [LESS](https://github.com/less/less.js/archive/v1.7.3.zip) en voeg het toe aan de desbetreffende projectbestanden
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
