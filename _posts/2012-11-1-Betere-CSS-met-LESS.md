@@ -20,15 +20,15 @@ Een belangrijke eigenschap van LESS is zijn comptabiliteit met CSS. LESS kan nam
 
 Het implementeren van LESS in een project bestaat uit drie handelingen:
 
-1.Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
+1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
 ```html
 <link rel="stylesheet/less" href="style.less">
 ```
 
-2.Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
-3.Voeg nu de volgende regel code toe in de van je HTML code:
+3. Voeg nu de volgende regel code toe in de van je HTML code:
 
 ```html
 <script src=”less.js”></script>
@@ -216,7 +216,7 @@ Als je door de CSS heen scrolled valt op dat er veel dubbele code staat die met 
 ###Stap 2: Implementatie Van LESS
 We beginnen met het implementeren van LESS in onze werkbestanden. Zoals als eerder in het artikel is geschreven, bestaat dit uit drie handelingen. Voor dit project komt er eentje bij, aangezien we nog met een CSS bestand werken:
 
-1.Zoek in de head van index.html naar de regel:
+1. Zoek in de head van index.html naar de regel:
 
 ```html
 <link rel="stylesheet" href="style/style.css">
@@ -228,11 +228,11 @@ En vervang deze met:
 <link rel="stylesheet/less" href="style/style.less">
 ```
 
-2.Pas de extensie van je stylesheet bestand aan: style.css wordt style.less.
+2. Pas de extensie van je stylesheet bestand aan: style.css wordt style.less.
 
-3.Download less.js (www.lesscss.org) en kopieer deze in je map met werkbestanden (als je de basis gebruikt kan deze stap worden overgeslagen
+3. Download less.js (www.lesscss.org) en kopieer deze in je map met werkbestanden (als je de basis gebruikt kan deze stap worden overgeslagen
 
-4.Voeg in je index.html de volgende regel toe in de head onder de stylesheet regel om zo een koppeling met less.js te krijgen:
+4. Voeg in je index.html de volgende regel toe in de head onder de stylesheet regel om zo een koppeling met less.js te krijgen:
 
 ```html
 <script src=”scripts/less.js”></script>
