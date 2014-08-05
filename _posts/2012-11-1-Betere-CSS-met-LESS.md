@@ -195,11 +195,11 @@ Om alle stof hierboven goed op te kunnen nemen gaan we via een paar stappen een 
 ###Stap 1: De Basis (Download)
 Eerst zetten we kort een basis neer in HTML en CSS. De pagina bestaat uit een gecentreerd artikel die een titel, paragraaf, afbeelding, twee lijstjes en twee knoppen bevat.
 
-![alt text](https://rinkpijpker.github.io/images/betere-css-met-less-stap1-css.jpg "Stap 1 CSS")
+[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-css.jpg" alt="Betere CSS met LESS Stap 1 de CSS"/>]({{ site.baseurl }}/)
 (High-Res)
 Vervolgens stijlen we de pagina enigszins met wat CSS code.
 
-![alt text](https://rinkpijpker.github.io/images/betere-css-met-less-stap1-html.jpg "Stap 1 HTML")
+[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-html.jpg" alt="Betere CSS met LESS Stap 1 de HTML"/>]({{ site.baseurl }}/)
 (High-Res)
 Als je door de CSS heen scrolled valt op dat er veel dubbele code staat die met LESS weg te werken valt. Daarbij kunnen we met LESS veel meer structuur in de stylesheet krijgen.
 
