@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Betere CSS met LESS
-published: true
 ---
+
 
 Als je globaal naar websites kijkt, bestaan ze uit HTML voor de structuur en CSS voor de opmaak. Stylesheets in CSS hebben niet een hoge instapdrempel. Het is een taal met een eenvoudige structuur waar je vooral de vele properties die je kan gebruiken moet leren. Het nadeel hiervan is dat je niet veel mogelijkheden hebt qua ordening en automatisering.
 
@@ -22,15 +22,17 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
-
+``` html
 <link rel="stylesheet/less" href="style.less">
+```
 
 2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
+``` html
 <script src=”less.js”></script>
-
+```
 
 Het is hierbij van belang dat deze coderegel altijd na de import van de stylesheet(s) komt.
 
@@ -38,21 +40,23 @@ Het is hierbij van belang dat deze coderegel altijd na de import van de styleshe
 
 Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarvoor je ze kan gebruiken. Een variabele bevat namelijk een stukje informatie dat voor verdere toepassing gebruikt kan worden. En zo werken ze ook bij LESS.
 
+``` css 
 @blue: #0000FF;
+```
 
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
+``` css
 @blue: #0000FF;
-
 div.container {
 	color: @blue;
 	background: @blue;
 }
-
 div.text {
 	color: @blue;
 	border: 1px solid @blue;
 }
+```
 
 Hier zie je dat de variabele bij verschillende classes en attributen wordt gebruikt. Dit scheelt code en denkwerk, maar geeft je ook een groot voordeel in de vorm van beheerbaarheid. Stel dat je tijdens je project er voor kiest om toch een lichtere tint blauw te gaan gebruiken. In plaats dat je alle attributen moet veranderen hoef je slechts de variabele aan te passen. Geldt deze tint blauw slechts voor een paar van de gekoppelde attributen, dan maak je gemakkelijk een nieuwe variabele hiervoor aan. Easy peasy.
 
@@ -60,25 +64,26 @@ Hier zie je dat de variabele bij verschillende classes en attributen wordt gebru
 
 Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes die zelf attributen bevatten en die geembed kunnen worden in classes. Een voorbeeld van zo’n mixin met toepassing:
 
+``` css
 .borderline {
 	border-left: 1px solid #000;
 	border-right: 1px solid #fff;
 	border-radius: 5px;
 }
-
 div.container {
 	.borderline;
 }
-
 div.container2 {
 	.borderline;
 	border-bottom: 2px solid red;
 }
+```
 
 In dit voorbeeld wordt de class borderline voor twee div’s gebruikt en kan eventueel aangevuld worden met extra attributen die specifiek voor dat element bedoeld zijn. Net als met de variabelen bevorderen mixins de beheerbaarheid. Slechts de mixin hoeft aangepast te worden om effect te hebben op alle gelinkte elementen.
 
 Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten bevatten. Deze argumenten worden op dezelfde wijze als variabelen gedeclareerd (@):
 
+``` css
 .borderline(@number: 5px, @color: #fff) {
 	border: @number solid @color;
 	margin: @number;
@@ -86,22 +91,23 @@ Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten beva
 div.container {
 	.borderline;
 }
-
 div.container2 {
 	.borderline(3px, #000);
 }
+```
 
 Vertaald zich als gecompilede CSS naar:
- 
+
+``` css 
 div.container {
 	border: 5px solid #fff;
 	margin: 5px;
 }
-
 div.container2 {
 	border: 3px solid #fff;
 	margin: 3px;
 }
+```
 
 Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als andere waardes zijn meegegeven.
 
@@ -109,26 +115,26 @@ Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als
 
 Waar ik mij vaak aan ergerde waar de lange selectors die ontstonden in mijn CSS om de ‘inherentance’ van elementen te specificeren. Bijvoorbeeld:
 
+<code>
 div.container > h2.heading {
 	font-size: 30px;
 }
-
 div.container > p.text {
 	font-size: 14px;
 }
-
 div.container > p.text > a.link {
 	color: #0000ff;
 	text-decoration: underline;
 }
-
 div.container > p.text > a.link:hover {
 	color: #fff;
 	text-decoration: none;
 }
+</code>
 
 Met LESS kun je deze selectors in elkaar nesten. Dit zorgt voor minder code en voor meer overzicht. Er is namelijk een structuur zichtbaar in de code:
 
+```css
 div.container {
 	h2.heading {
 		font-size: 30px;
@@ -143,6 +149,7 @@ div.container {
 		}
 	}
 }
+```
 
 Hoeveel lagen je hierin aanbrengt kun je zelf bepalen. Wat jij prettig vindt werken. De & wordt in LESS gebruikt om selectors aaneen te schakelen aan hun parent element. Dit is vooral van toepassing op pseudo-classes (bijvoorbeeld: :hover, :active, :after). Een apart voorbeeld hiervan:
 
