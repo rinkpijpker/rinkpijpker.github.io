@@ -60,26 +60,25 @@ Hier zie je dat de variabele bij verschillende classes en attributen wordt gebru
 
 Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes die zelf attributen bevatten en die geembed kunnen worden in classes. Een voorbeeld van zo’n mixin met toepassing:
 
-``` css
 .borderline {
 	border-left: 1px solid #000;
 	border-right: 1px solid #fff;
 	border-radius: 5px;
 }
+
 div.container {
 	.borderline;
 }
+
 div.container2 {
 	.borderline;
 	border-bottom: 2px solid red;
 }
-```
 
 In dit voorbeeld wordt de class borderline voor twee div’s gebruikt en kan eventueel aangevuld worden met extra attributen die specifiek voor dat element bedoeld zijn. Net als met de variabelen bevorderen mixins de beheerbaarheid. Slechts de mixin hoeft aangepast te worden om effect te hebben op alle gelinkte elementen.
 
 Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten bevatten. Deze argumenten worden op dezelfde wijze als variabelen gedeclareerd (@):
 
-``` css
 .borderline(@number: 5px, @color: #fff) {
 	border: @number solid @color;
 	margin: @number;
@@ -87,23 +86,22 @@ Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten beva
 div.container {
 	.borderline;
 }
+
 div.container2 {
 	.borderline(3px, #000);
 }
-```
 
 Vertaald zich als gecompilede CSS naar:
-
-``` css 
+ 
 div.container {
 	border: 5px solid #fff;
 	margin: 5px;
 }
+
 div.container2 {
 	border: 3px solid #fff;
 	margin: 3px;
 }
-```
 
 Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als andere waardes zijn meegegeven.
 
@@ -111,26 +109,26 @@ Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als
 
 Waar ik mij vaak aan ergerde waar de lange selectors die ontstonden in mijn CSS om de ‘inherentance’ van elementen te specificeren. Bijvoorbeeld:
 
-<code>
 div.container > h2.heading {
 	font-size: 30px;
 }
+
 div.container > p.text {
 	font-size: 14px;
 }
+
 div.container > p.text > a.link {
 	color: #0000ff;
 	text-decoration: underline;
 }
+
 div.container > p.text > a.link:hover {
 	color: #fff;
 	text-decoration: none;
 }
-</code>
 
 Met LESS kun je deze selectors in elkaar nesten. Dit zorgt voor minder code en voor meer overzicht. Er is namelijk een structuur zichtbaar in de code:
 
-```css
 div.container {
 	h2.heading {
 		font-size: 30px;
@@ -145,7 +143,6 @@ div.container {
 		}
 	}
 }
-```
 
 Hoeveel lagen je hierin aanbrengt kun je zelf bepalen. Wat jij prettig vindt werken. De & wordt in LESS gebruikt om selectors aaneen te schakelen aan hun parent element. Dit is vooral van toepassing op pseudo-classes (bijvoorbeeld: :hover, :active, :after). Een apart voorbeeld hiervan:
 
