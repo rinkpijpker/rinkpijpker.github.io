@@ -46,9 +46,8 @@ Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarv
 
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
-``` css
+<code>
 @blue: #0000FF;
-
 div.container {
 	color: @blue;
 	background: @blue;
@@ -58,7 +57,7 @@ div.text {
 	color: @blue;
 	border: 1px solid @blue;
 }
-```
+</code>
 
 Hier zie je dat de variabele bij verschillende classes en attributen wordt gebruikt. Dit scheelt code en denkwerk, maar geeft je ook een groot voordeel in de vorm van beheerbaarheid. Stel dat je tijdens je project er voor kiest om toch een lichtere tint blauw te gaan gebruiken. In plaats dat je alle attributen moet veranderen hoef je slechts de variabele aan te passen. Geldt deze tint blauw slechts voor een paar van de gekoppelde attributen, dan maak je gemakkelijk een nieuwe variabele hiervoor aan. Easy peasy.
 
@@ -72,11 +71,9 @@ Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes d
 	border-right: 1px solid #fff;
 	border-radius: 5px;
 }
-
 div.container {
 	.borderline;
 }
-
 div.container2 {
 	.borderline;
 	border-bottom: 2px solid red;
@@ -92,21 +89,21 @@ Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten beva
 	border: @number solid @color;
 	margin: @number;
 }
-
 div.container {
 	.borderline;
 }
-
 div.container2 {
 	.borderline(3px, #000);
 }
+```
+
 Vertaald zich als gecompilede CSS naar:
 
+``` css 
 div.container {
 	border: 5px solid #fff;
 	margin: 5px;
 }
-
 div.container2 {
 	border: 3px solid #fff;
 	margin: 3px;
@@ -119,24 +116,22 @@ Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als
 
 Waar ik mij vaak aan ergerde waar de lange selectors die ontstonden in mijn CSS om de ‘inherentance’ van elementen te specificeren. Bijvoorbeeld:
 
-``` css
+<code>
 div.container > h2.heading {
 	font-size: 30px;
-
+}
 div.container > p.text {
 	font-size: 14px;
 }
-
 div.container > p.text > a.link {
 	color: #0000ff;
 	text-decoration: underline;
 }
-
 div.container > p.text > a.link:hover {
 	color: #fff;
 	text-decoration: none;
 }
-```
+</code>
 
 Met LESS kun je deze selectors in elkaar nesten. Dit zorgt voor minder code en voor meer overzicht. Er is namelijk een structuur zichtbaar in de code:
 
