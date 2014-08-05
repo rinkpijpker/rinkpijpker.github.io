@@ -20,13 +20,19 @@ Een belangrijke eigenschap van LESS is zijn comptabiliteit met CSS. LESS kan nam
 
 Het implementeren van LESS in een project bestaat uit drie handelingen:
 
-1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
-`link rel=”stylesheet/less” type=”text/css” href=”style.less”`
+1.Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
-2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+```html
+<link rel="stylesheet/less" href="style.less">
+```
 
-3. Voeg nu de volgende regel code toe in de van je HTML code:
-`[script src=”less.js”>][/script]`
+2.Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+
+3.Voeg nu de volgende regel code toe in de van je HTML code:
+
+```html
+<script src=”less.js”></script>
+```
 
 Het is hierbij van belang dat deze coderegel altijd na de import van de stylesheet(s) komt.
 
@@ -34,10 +40,13 @@ Het is hierbij van belang dat deze coderegel altijd na de import van de styleshe
 
 Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarvoor je ze kan gebruiken. Een variabele bevat namelijk een stukje informatie dat voor verdere toepassing gebruikt kan worden. En zo werken ze ook bij LESS.
 
-`@blue: #0000FF;`
+```css 
+@blue: #0000FF;
+```
+
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
-```
+```css
 @blue: #0000FF;
 
 div.container {
@@ -57,7 +66,7 @@ Hier zie je dat de variabele bij verschillende classes en attributen wordt gebru
 
 Mixins gaan alweer een stap verder. Mixins zijn namelijk een soort CSS classes die zelf attributen bevatten en die geembed kunnen worden in classes. Een voorbeeld van zo’n mixin met toepassing:
 
-```
+```css
 .borderline {
 	border-left: 1px solid #000;
 	border-right: 1px solid #fff;
@@ -78,7 +87,7 @@ In dit voorbeeld wordt de class borderline voor twee div’s gebruikt en kan eve
 
 Een mixin kan ook, net zoals classes in andere programmeertalen, argumenten bevatten. Deze argumenten worden op dezelfde wijze als variabelen gedeclareerd (@):
 
-```
+```css
 .borderline(@number: 5px, @color: #fff) {
 	border: @number solid @color;
 	margin: @number;
@@ -110,6 +119,7 @@ Argumenten kunnen dus een standaard waarde bevatten. Deze wordt overschreven als
 
 Waar ik mij vaak aan ergerde waar de lange selectors die ontstonden in mijn CSS om de ‘inherentance’ van elementen te specificeren. Bijvoorbeeld:
 
+```css
 div.container > h2.heading {
 	font-size: 30px;
 
@@ -126,8 +136,11 @@ div.container > p.text > a.link:hover {
 	color: #fff;
 	text-decoration: none;
 }
+```
+
 Met LESS kun je deze selectors in elkaar nesten. Dit zorgt voor minder code en voor meer overzicht. Er is namelijk een structuur zichtbaar in de code:
 
+```css
 div.container {
 	h2.heading {
 		font-size: 30px;
@@ -142,17 +155,22 @@ div.container {
 		}
 	}
 }
+```
+
 Hoeveel lagen je hierin aanbrengt kun je zelf bepalen. Wat jij prettig vindt werken. De & wordt in LESS gebruikt om selectors aaneen te schakelen aan hun parent element. Dit is vooral van toepassing op pseudo-classes (bijvoorbeeld: :hover, :active, :after). Een apart voorbeeld hiervan:
 
 HTML:
 
-[div class=”container right”] [/div]
-[div class=”container”]
-	[div class=”box”][/div]
-[/div]
+```html
+<div class=”container right”> </div>
+<div class=”container”>
+	<div class=”box”></div>
+</div>
+```
 
 LESS:
 
+```css
 div.container {
 	color: #000;
 	
@@ -164,8 +182,11 @@ div.container {
 		background: #fff;
 	}
 }
-In plain CSS zou dit er als volgt uitzien:
+```
 
+In gewone CSS zou dit er als volgt uitzien:
+
+```css
 div.container {
 	color: #000;
 }
@@ -177,6 +198,7 @@ div.container.right {
 div.container .box {
 	background: #fff;
 }
+```
 
 ##Tutorial
 
@@ -194,19 +216,28 @@ Als je door de CSS heen scrolled valt op dat er veel dubbele code staat die met 
 ###Stap 2: Implementatie Van LESS
 We beginnen met het implementeren van LESS in onze werkbestanden. Zoals als eerder in het artikel is geschreven, bestaat dit uit drie handelingen. Voor dit project komt er eentje bij, aangezien we nog met een CSS bestand werken:
 
-1. Zoek in de head van index.html naar de regel:
+1.Zoek in de head van index.html naar de regel:
 
-link rel="stylesheet" href="style/style.css" type="text/css" 
+```html
+<link rel="stylesheet" href="style/style.css">
+```
+
 En vervang deze met:
 
-link rel=”stylesheet/less” type=”text/css” href=”style/style.less” 
-2. Pas de extensie van je stylesheet bestand aan: style.css wordt style.less.
+```html
+<link rel="stylesheet/less" href="style/style.less">
+```
 
-3. Download less.js (www.lesscss.org) en kopieer deze in je map met werkbestanden (als je de basis gebruikt kan deze stap worden overgeslagen
+2.Pas de extensie van je stylesheet bestand aan: style.css wordt style.less.
 
-4. Voeg in je index.html de volgende regel toe in de head onder de stylesheet regel om zo een koppeling met less.js te krijgen:
+3.Download less.js (www.lesscss.org) en kopieer deze in je map met werkbestanden (als je de basis gebruikt kan deze stap worden overgeslagen
 
-[script src=”scripts/less.js”][/script]
+4.Voeg in je index.html de volgende regel toe in de head onder de stylesheet regel om zo een koppeling met less.js te krijgen:
+
+```html
+<script src=”scripts/less.js”></script>
+```
+
 Als het goed is ziet je pagina er nu weer hetzelfde uit als voor de LESS implementatie.
 
 ###Stap 3: Variabelen
@@ -214,13 +245,33 @@ Nu de koppeling met LESS is gemaakt, kunnen we aan de slag met de opmaak. We beg
 
 Als we snel door de code scannen zijn er drie kleuren die vaak gebruikt worden: #1166aa, #575757 en #979797. Deze gaan we bovenin in de stylesheet definiëren als variabelen.
 
+```css
 @blue1: #1166aa;
 @grey1: #575757;
 @grey2: #979797;
+```
+
 Vervolgens gaan we in de stylesheet op zoek naar deze hex kleur codes en vervangen we ze met de bijbehorende variabele. Bijvoorbeeld:
 
-color: #575757; > color: @grey1;
-border: 1px solid #1166aa; > border: 1px solid @blue1;
+```css
+color: #575757;
+```
+
+Vervangen we met:
+
+```css
+color: @grey1;
+```
+
+```css
+border: 1px solid #1166aa;
+```
+
+Vervangen we met:
+
+```css
+border: 1px solid @blue1;
+````
 
 Kies voor je variabelen voor jezelf logische namen en maak ze niet te gecompliceerd. Je moet ze kunnen toepassen zonder er bij stil te staan wat ze ook al weer inhielden.
 
@@ -229,14 +280,18 @@ In mixins kunnen we regels CSS code stoppen die vaak bij elkaar in een element w
 
 In onze CSS hebben we bij ons article gebruikt gemaakt van een CSS3 gradient. Door hier een mixin van te maken kunnen we deze code makkelijk manipuleren en eventueel vaker toepassen als er een element bijkomt die ook deze code nodig heeft. De mixin:
 
+```css
 .gradient {
     background: #efefef;
     background: -moz-linear-gradient(top,  #efefef 0%, #f4f4f4 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#f4f4f4)); 
     background: -o-linear-gradient(top, #efefef 0%,#f4f4f4 100%); 
 }
+```
+
 Vervolgens kunnen we deze gebruiken voor ons article, door de background attributen bij article {} te vervangen met de mixin. Het resultaat:
 
+```css
 article {
     display: block;
     position: relative;
@@ -246,25 +301,34 @@ article {
     padding: 0 15px 30px 15px;
     .gradient;
 }
+```
+
 Deze mixin kan nu makkelijk worden toegepast bij elementen, maar is niet super flexibel. Hij werkt namelijk alleen met de kleuren die gedefinieerd zijn binnen de mixin. Daarom koppelen we twee argumenten aan de mixin:
 
+```css
 .gradient (@color1: #efefef, @color2: #f4f4f4) {
     background: @color1;
     background: -moz-linear-gradient(top,  @color1 0%, @color2 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color1), color-stop(100%,@color2)); 
     background: -o-linear-gradient(top,  @color1 0%,@color2 100%); 
 }
+```
+
 De mixin kent nu de argumenten @color1 en @color2 die in dit voorbeeld een standaard waarde bevatten. Door bijvoorbeeld bij een element de mixin toe te voegen en twee andere waardes aan de mixin mee te geven zullen de standaardwaardes overschreven worden.
 
 Een tweede mixin kunnen we definiëren voor een paar attributen van het font. Namelijk de font-family, font-size en line-height. De mixin:
 
+```css
 .font (@family: sans-serif, @fontsize: 18px, @lineheight: 20px) {
     font-family: @family;
     font-size: @fontsize; 
     line-height: @lineheight;
 }
+```
+
 Ook deze mixin bevat variabelen met standaard waardes. Nu kunnen we in de stylesheet op zoek naar elementen die deze drie attributen gebruiken. Door ze te vervangen met de mixin en eventuele aangepaste waardes schonen we de code mooi op. Hieronder een korte opsomming van alle aangepaste elementen die gebruik maken van de .font mixin:
 
+```css
 header > h1 {
     float: left;
     color: @grey2;
@@ -313,6 +377,8 @@ article > a#button-wiki, article > a#button-dummy {
     -o-transition: background 1s;
     -moz-transition: background 1s;
 }
+```
+
 En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te maken en toe te passen in de tutorial bestanden. Download de eindbestanden.
 
 ##It’s a Wrap
