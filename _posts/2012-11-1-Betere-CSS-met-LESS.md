@@ -22,17 +22,14 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 1. Link je .less stylesheet in je HTML bestanden met de volgende regel code in de head:
 
-``` html
-<link rel="stylesheet/less" href="style.less">
-```
+	<link rel="stylesheet/less" href="style.less">
 
 2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
-``` html
-<script src=”less.js”></script>
-```
+	<script src=”less.js”></script>
+
 
 Het is hierbij van belang dat deze coderegel altijd na de import van de stylesheet(s) komt.
 
@@ -40,23 +37,23 @@ Het is hierbij van belang dat deze coderegel altijd na de import van de styleshe
 
 Wie ook maar een beetje bekend is met programmeren kent variabelen en weet waarvoor je ze kan gebruiken. Een variabele bevat namelijk een stukje informatie dat voor verdere toepassing gebruikt kan worden. En zo werken ze ook bij LESS.
 
-``` css 
-@blue: #0000FF;
-```
+
+	@blue: #0000FF;
+
 
 Hierboven wordt een kleurcode gekoppeld aan de variabele ‘@blue’. Deze variabele is dan verder bruikbaar in de stylesheet.
 
-``` css
-@blue: #0000FF;
-div.container {
-	color: @blue;
-	background: @blue;
-}
-div.text {
-	color: @blue;
-	border: 1px solid @blue;
-}
-```
+	@blue: #0000FF;
+
+	div.container {
+		color: @blue;
+		background: @blue;
+	}
+
+	div.text {
+		color: @blue;
+		border: 1px solid @blue;
+	}
 
 Hier zie je dat de variabele bij verschillende classes en attributen wordt gebruikt. Dit scheelt code en denkwerk, maar geeft je ook een groot voordeel in de vorm van beheerbaarheid. Stel dat je tijdens je project er voor kiest om toch een lichtere tint blauw te gaan gebruiken. In plaats dat je alle attributen moet veranderen hoef je slechts de variabele aan te passen. Geldt deze tint blauw slechts voor een paar van de gekoppelde attributen, dan maak je gemakkelijk een nieuwe variabele hiervoor aan. Easy peasy.
 
