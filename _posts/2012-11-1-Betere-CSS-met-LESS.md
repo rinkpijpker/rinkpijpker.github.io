@@ -24,7 +24,7 @@ Het implementeren van LESS in een project bestaat uit drie handelingen:
 
 	<link rel="stylesheet/less" href="style.less">
 
-2. Download ‘less.js’ (www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
+2. Download [LESS](www.lesscss.org) en voeg het toe aan de desbetreffende projectbestanden
 
 3. Voeg nu de volgende regel code toe in de van je HTML code:
 
@@ -192,15 +192,15 @@ In gewone CSS zou dit er als volgt uitzien:
 
 Om alle stof hierboven goed op te kunnen nemen gaan we via een paar stappen een CSS stylesheet omzetten naar een LESS stylesheet. Zo kun je ook zien wat voor effect LESS kan hebben op de hoeveelheid en overzicht van je code. De nested rules zijn hier echter niet in meegenomen, om zo de tutorial kort en bondig te houden.
 
-###Stap 1: De Basis (Download)
+###Stap 1: De Basis ([Download](https://www.dropbox.com/s/5oykspudx57dssu/betere-css-met-less-start.zip))
 Eerst zetten we kort een basis neer in HTML en CSS. De pagina bestaat uit een gecentreerd artikel die een titel, paragraaf, afbeelding, twee lijstjes en twee knoppen bevat.
 
-[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-css.png" alt="Betere CSS met LESS Stap 1 de CSS"/>]({{ site.baseurl }}/)
-(High-Res)
+[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-html.png" alt="Betere CSS met LESS Stap 1 de HTML"/>]
+
 Vervolgens stijlen we de pagina enigszins met wat CSS code.
 
-[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-html.png" alt="Betere CSS met LESS Stap 1 de HTML"/>]({{ site.baseurl }}/)
-(High-Res)
+[<img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-css.png" alt="Betere CSS met LESS Stap 1 de CSS"/>]
+
 Als je door de CSS heen scrolled valt op dat er veel dubbele code staat die met LESS weg te werken valt. Daarbij kunnen we met LESS veel meer structuur in de stylesheet krijgen.
 
 ###Stap 2: Implementatie Van LESS
@@ -346,12 +346,11 @@ Ook deze mixin bevat variabelen met standaard waardes. Nu kunnen we in de styles
 	    -moz-transition: background 1s;
 	}
 	
-En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te maken en toe te passen in de tutorial bestanden. Download de eindbestanden.
+En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te maken en toe te passen in de tutorial bestanden. [Download de eindbestanden](https://www.dropbox.com/s/5k0my0af48jjg18/betere-css-met-less-finish.zip).
 
 ##It’s a Wrap
 
 Zoals je hopelijk hebt ervaren is LESS een manier om een hoger niveau van beheerbaarheid en structuur in je stylesheets te integreren. In de tutorial hierboven is gewerkt vanuit een bestaand CSS bestand dat om werd gezet naar een LESS bestand. De bedoeling is dat je vanaf nu meteen begint met een LESS stylesheet en dus al van te voren na gaat denken over eventuele variabelen, mixins en nested rules. Met de juiste mindset en skills kun je de productietijd inkorten en de flexibiliteit van je stylesheets enorm vergroten. Write less with LESS.
 
 ##Ontdek
-
-Als je de variabelen en mixins onder de knie hebt kun je bij www.lesscss.org terecht voor meer functionaliteiten en voorbeelden. Ook is het dan aan te raden om SASS (http://sass-lang.com/) eens een kans te geven. Ditwww.lesscss.org terecht voor meer functionaliteiten en voorbeelden. Ook is het dan aan te raden om SASS (http://sass-lang.com/) eens een kans te geven. Dit is een soortgelijke stylesheet language die iets meer functionaliteiten bevat en daardoor een iets hogere instapdrempel kent.
+Als je de variabelen en mixins onder de knie hebt kun je bij [LESSCSS](www.lesscss.org) terecht voor meer functionaliteiten en voorbeelden. Ook is het dan aan te raden om [SASS](http://sass-lang.com/) eens een kans te geven. Dit is een soortgelijke stylesheet language die iets meer functionaliteiten bevat en daardoor een iets hogere instapdrempel kent.
