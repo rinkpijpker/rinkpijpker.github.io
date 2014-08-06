@@ -7,7 +7,7 @@ Iedere web developer heeft zijn eigen toolkit met online diensten en programma�
 
 
 ##Brackets
-![Web Development Tool Brackets Website]( {{ site.baseurl }}/images/web-development-tools-brackets-website.png)
+![Web Development Tool Brackets Website]( {{ site.baseurl }}/images/web-development-tools-brackets-website.jpg)
 
 Het aanbod van text editors is vrij breed en divers. Sommige developers schrijven graag hun code in Adobe Dreamweaver, andere graag in Sublime Text. Je kan het zelfs in Notepad doen. Iedere editor heeft natuurlijk zijn unieke eigenschappen. Waar Sublime Text bekend staat om zijn vele plugins, is Dreamweaver een zeer uitgebreid programma met veel functionaliteiten. 
 
@@ -15,7 +15,7 @@ New kid on the block is Brackets van Adobe. Een programma wat ik sinds kort ontd
 
 Brackets zijn DNA bestaat daarbij uit HTML, CSS en Javascript. Dit in combinatie met het feit dat de editor open source is, resulteert in een hoge update-frequentie met veel nieuwe features en bugfixes per milestone. Het programma is gratis dus proberen kan geen kwaad.
 
-![Web Development Tool Brackets Interface]( {{ site.baseurl }}/images/web-development-tools-brackets-interface.png)
+![Web Development Tool Brackets Interface]( {{ site.baseurl }}/images/web-development-tools-brackets-interface.jpg)
 
 
 ###Features
@@ -27,7 +27,7 @@ Brackets zijn DNA bestaat daarbij uit HTML, CSS en Javascript. Dit in combinatie
 
 
 ##JPEGmini
-![Web Development Tool JPEGmini Website]( {{ site.baseurl }}/images/web-development-tools-jpegmini-website.png)
+![Web Development Tool JPEGmini Website]( {{ site.baseurl }}/images/web-development-tools-jpegmini-website.jpg)
 
 Iedere web developer kent wel het dilemma in Photoshop waarin je bij het exporteren van een foto moet kiezen tussen bestandsgrootte en kwaliteit. JPEGmini is een online dienst om je jpg’tjes op dieet te zetten met minimale kwaliteitsverlies. Win win.  
 
@@ -35,7 +35,7 @@ Het proces zelf is ook vrij gemakkelijk op de website. Je klikt op de grote gele
 
 Een tip die ik je kan meegeven: Registreer je wel even. Dit is gratis en zorgt er voor dat je niet foto voor foto hoeft up te loaden, maar meteen een heel album kan optimaliseren. 
 
-![Web Development Tool JPEGmini Interface]( {{ site.baseurl }}/images/web-development-tools-jpegmini-interface.png)
+![Web Development Tool JPEGmini Interface]( {{ site.baseurl }}/images/web-development-tools-jpegmini-interface.jpg)
 
 ###Features
 - Zowel online tool als app voor Mac OSX
@@ -47,7 +47,7 @@ Een tip die ik je kan meegeven: Registreer je wel even. Dit is gratis en zorgt e
 
 
 ##Google Web Fonts
-![Web Development Tool Brackets Interface]( {{ site.baseurl }}/images/web-development-tools-google-web-fonts-website.png)
+![Web Development Tool Brackets Interface]( {{ site.baseurl }}/images/web-development-tools-google-web-fonts-website.jpg)
 
 Het aantal lettertypes die je voor een website kon gebruiken was altijd vrij beperkt. De keuze ging altijd al snel naar Times New Roman, Arial / Helvetica, Tahoma of Georgia. Om hiervan af te wijken en een ander lettertype  te gebruiken leverde de nodige problemen op. Ten eerste loop je het risico dat veel mensen het gebruikte lettertype niet op hun computer hebben, waardoor het niet gerenderd kan worden. Je kan er dan voor kiezen om het te embedden in je website, maar dit komt vaak de laadtijd niet ten goede en je zit bij betaalde lettertypes vaak met licenties die je moet hebben.
 
@@ -55,7 +55,7 @@ Hierin biedt Google Web Fonts een uitkomst. Kort gezegd is dit een lettertype li
 
 Wat ook opvalt is hoe makkelijk de dienst werkt. Je selecteert de lettertypes en stylen die je wilt en je krijgt meteen de code gepresenteerd die je kan toevoegen aan je HTML, CSS of Javascript. Wat jij maar wilt. As we speak bezit de library over de 550 lettertypes en dit nummer groeit met de dag. 
 
-![Web Development Tool Google Web Fonts Interface]( {{ site.baseurl }}/images/web-development-tools-google-web-fonts-interface.png)
+![Web Development Tool Google Web Fonts Interface]( {{ site.baseurl }}/images/web-development-tools-google-web-fonts-interface.jpg)
 
 ###Features
 - Groeiende library van gratis webfonts
@@ -67,7 +67,7 @@ Wat ook opvalt is hoe makkelijk de dienst werkt. Je selecteert de lettertypes en
 
 
 ##Closure Compiler
-![Web Development Tool Closure Compiler]( {{ site.baseurl }}/images/web-development-tools-closure-compiler.png)
+![Web Development Tool Closure Compiler]( {{ site.baseurl }}/images/web-development-tools-closure-compiler.jpg)
 
 Een soortgelijke tool, maar dan voor Javascript en jQuery, is Closure Compiler van Google. Via verschillende technieken zorgt deze online tool er voor dat je code zo klein mogelijk wordt gemaakt. Deze code kun je dan weer implementeren in je product. Dit komt weer ten goede voor de laadtijd van je website of applicatie.
 
@@ -81,11 +81,11 @@ Test de gecompilede code altijd nog wel even voordat je hem live zet. Er is name
 
 
 ##CSScomb
-![Web Development Tool Csscomb Website]( {{ site.baseurl }}/images/web-development-tools-csscomb-website.png)
+![Web Development Tool Csscomb Website]( {{ site.baseurl }}/images/web-development-tools-csscomb-website.jpg)
 
 CSScomb probeert orde in je chaotische CSS stylesheets te creëren. Vooral in projecten waarbij meerdere mensen CSS aan het schrijven zijn, krijg je soms stylesheets die er onleesbaar uitzien dankzij verschillende structuren van code en comments. CSScomb ordent je stylesheets door de attributen per item in een logische volgorde te rankschikken. Het eindresultaat is een stylesheet die makkelijk te lezen en dus te bewerken is. Wat de tool niet doet is de code fouten van jou of je projectgenoten er uit halen. Blijf dus nette code schrijven. 
 
-![Web Development Tool CSScomb Interface]( {{ site.baseurl }}/images/web-development-tools-csscomb-interface.png)
+![Web Development Tool CSScomb Interface]( {{ site.baseurl }}/images/web-development-tools-csscomb-interface.jpg)
 
 ###Features
 - Online tool
@@ -97,7 +97,7 @@ CSScomb probeert orde in je chaotische CSS stylesheets te creëren. Vooral in pr
 
 
 ##Prefixr
-![Web Development Tool Prefixr]( {{ site.baseurl }}/images/web-development-tools-prefixr.png)
+![Web Development Tool Prefixr]( {{ site.baseurl }}/images/web-development-tools-prefixr.jpg)
 
 Door de komst van CSS3 zijn er nu veel dingen via stylesheets mogelijk die vroeger alleen bereikt konden worden door externe plugins en scripts. Doordat CSS3 echter nog een Working Draft is, wordt er nog volop geexperimenteerd met nieuwe attributen. Het nadeel hiervan is dat iedere browser vaak zijn eigen prefix gebruikt. Je kent ze vast wel: -webkit-, -moz-, -o-, -ms-. Prefixr kan het schrijven van al deze lijnen code versimpelen. Je gooit het stuk code (of gewoon je hele CSS) in de editor, hij detecteert de atributen waarbij de nodige prefixes missen en vult ze aan. Vervolgens kun je zo de code uit de editor kopiëren en gebruiken. Handy dandy.
 
