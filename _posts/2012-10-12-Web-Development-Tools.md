@@ -23,7 +23,7 @@ Brackets zijn DNA bestaat daarbij uit HTML, CSS en Javascript. Dit in combinatie
 - Live preview functie om real time code te manipuleren
 - Clean & minimalistisch uiterlijk
 
-Download [Brackets](http://brackets.io/)
+[Download Brackets](http://brackets.io/)
 
 
 ##JPEGmini
@@ -43,7 +43,7 @@ Een tip die ik je kan meegeven: Registreer je wel even. Dit is gratis en zorgt e
 - Gemakkelijk proces 
 - Compleet gratis
 
-Bekijk [JPEGmini](www.jpegmini.com)
+[Bekijk JPEGmini](www.jpegmini.com)
 
 
 ##Google Web Fonts
@@ -63,7 +63,7 @@ Wat ook opvalt is hoe makkelijk de dienst werkt. Je selecteert de lettertypes en
 - Uitgebreide zoekfilters
 
 
-Bekijk [Google Web Fonts](www.google.com/webfonts)
+[Bekijk Google Web Fonts](www.google.com/webfonts)
 
 
 ##Closure Compiler
@@ -77,7 +77,7 @@ Test de gecompilede code altijd nog wel even voordat je hem live zet. Er is name
 - Online tool
 - Handige compress tool die via een paar klikken je een compressed bestand levert
 
-Bekijk [Closure Compiler](www.closure-compiler.appspot.com)
+[Bekijk Closure Compiler](www.closure-compiler.appspot.com)
 
 
 ##CSScomb
@@ -93,7 +93,7 @@ CSScomb probeert orde in je chaotische CSS stylesheets te creëren. Vooral in pr
 - Ook beschikbaar als plugin voor Sublime Text 2 & 3
 
 
-Bekijk [CSScomb](www.csscomb.com)
+[Bekijk CSScomb](www.csscomb.com)
 
 
 ##Prefixr
@@ -106,7 +106,7 @@ Door de komst van CSS3 zijn er nu veel dingen via stylesheets mogelijk die vroeg
 - CSS3 code aanvullen met missende prefixes
 - Ook beschikbaar als plugin voor SublimeText 2
 
-Bekijk [Prefixr](www.prefixr.com)
+[Bekijk Prefixr](www.prefixr.com)
 
 
 
