@@ -83,7 +83,7 @@ Het beste kun je dit alles toepassen door je prototype of eindproduct in de test
 
 ##Tutorial
 
-###Stap 1: De basis [Download]({{ site.baseurl }}/downloads/responsive-web-design-tutorial-start.zip)
+###Stap 1: De basis ([download]({{ site.baseurl }}/downloads/responsive-web-design-tutorial-start.zip))
 We beginnen eerst met de HTML. De content hierin valt op te delen in drie delen: het artikel (article) en twee kolommen (aside). Beide bevatten een titel (h1 of h2) en een tekst die opgebroken is in paragraphs (p). Niks spannends.
 
 <img src="{{ site.baseurl }}/images/responsive-web-design-stap-1-html.png" alt="Tutorial Responsive Web Design Stap 1 HTML"/>

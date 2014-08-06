@@ -192,7 +192,7 @@ In gewone CSS zou dit er als volgt uitzien:
 
 Om alle stof hierboven goed op te kunnen nemen gaan we via een paar stappen een CSS stylesheet omzetten naar een LESS stylesheet. Zo kun je ook zien wat voor effect LESS kan hebben op de hoeveelheid en overzicht van je code. De nested rules zijn hier echter niet in meegenomen, om zo de tutorial kort en bondig te houden.
 
-###Stap 1: De Basis ([Download](https://www.dropbox.com/s/5oykspudx57dssu/betere-css-met-less-start.zip))
+###Stap 1: De Basis ([download]({{ site.baseurl }}/downloads/betere-css-met-less-tutorial-start.zip))
 Eerst zetten we kort een basis neer in HTML en CSS. De pagina bestaat uit een gecentreerd artikel die een titel, paragraaf, afbeelding, twee lijstjes en twee knoppen bevat.
 
 <img src="{{ site.baseurl }}/images/betere-css-met-less-stap1-html.png" alt="Betere CSS met LESS Stap 1 de HTML"/>
@@ -346,7 +346,7 @@ Ook deze mixin bevat variabelen met standaard waardes. Nu kunnen we in de styles
 	    -moz-transition: background 1s;
 	}
 	
-En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te maken en toe te passen in de tutorial bestanden. [Download de eindbestanden](https://www.dropbox.com/s/5k0my0af48jjg18/betere-css-met-less-finish.zip).
+En dat was alweer de tutorial. Wees vrij om nog meer variabelen en mixins aan te maken en toe te passen in de tutorial bestanden. [Download de eindbestanden]({{ site.baseurl }}/downloads/betere-css-met-less-tutorial-finish.zip).
 
 ##It’s a Wrap
 
