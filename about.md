@@ -4,12 +4,12 @@ title: About
 published: true
 ---
 
-Some information about you!
+Ik werk sinds kort als free-lance web developer voor verschillende opdrachtgevers. Nieuwe projecten zijn altijd welkom. Dus als je mijn hulp nodig hebt mag je me altijd mailen.
 
-### More Information
+### Meer informatie
 
-A place to include any other types of information that you'd like to include about yourself. 
+De website is op dit moment vrij basic, maar wordt binnenkort uitgebreid met een portfolio en homepage. Ook werk ik aan een eigen identiteit en style voor de website. 
 
-### Contact me
+### Contact
 
 [rinkpijpker@gmail.com](mailto:rinkpijpker@gmail.com)
