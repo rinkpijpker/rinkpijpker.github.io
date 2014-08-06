@@ -7,7 +7,7 @@ Iedere web developer heeft zijn eigen toolkit met online diensten en programmaâ€
 
 
 ##Brackets
-<img src="{{ site.baseurl }}/images/web-development-tools-brackets-website.png" alt="Web Development Tool Brackets Website"/>
+![Web Development Tool Brackets Website]({{ site.baseurl }}/images/web-development-tools-brackets-website.png" alt="Web Development Tool Brackets Website)
 
 Het aanbod van text editors is vrij breed en divers. Sommige developers schrijven graag hun code in Adobe Dreamweaver, andere graag in Sublime Text. Je kan het zelfs in Notepad doen. Iedere editor heeft natuurlijk zijn unieke eigenschappen. Waar Sublime Text bekend staat om zijn vele plugins, is Dreamweaver een zeer uitgebreid programma met veel functionaliteiten. 
 
