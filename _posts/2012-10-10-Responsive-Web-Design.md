@@ -85,18 +85,15 @@ Het beste kun je dit alles toepassen door je prototype of eindproduct in de test
 
 ###Stap 1: De basis ([download]({{ site.baseurl }}/downloads/responsive-web-design-tutorial-start.zip))
 We beginnen eerst met de HTML. De content hierin valt op te delen in drie delen: het artikel (article) en twee kolommen (aside). Beide bevatten een titel (h1 of h2) en een tekst die opgebroken is in paragraphs (p). Niks spannends.
-
-<img src="{{ site.baseurl }}/images/responsive-web-design-stap-1-html.png" alt="Tutorial Responsive Web Design Stap 1 HTML"/>
+![Tutorial Responsive Web Design Stap 1 HTML]( {{ site.baseurl }}/images/responsive-web-design-stap-1-html.png)
 
 Vervolgens passen we enige opmaak toe op deze pagina. 
-
-<img src="{{ site.baseurl }}/images/responsive-web-design-stap-1-css.png" alt="Tutorial Responsive Web Design Stap 1 CSS"/>
+![Tutorial Responsive Web Design Stap 1 CSS]( {{ site.baseurl }}/images/responsive-web-design-stap-1-css.png)
 
 Ook deze houden we vrij basic. De titel van het artikel geeft we een font-size van 48px om hem op te laten vallen en alle paragraphs krijgen een font-size van 18px voor verhoogde leesbaarheid. De container om alle content is 960px breed met een margin van 20px vanaf de kant om altijd witruimte er om heen te krijgen. Dit geheel wordt vervolgens netjes op de pagina gecentreerd via de margin auto.
 
 Het resultaat mag er zijn. Wat een good lookin pagina:
-
-<img src="{{ site.baseurl }}/images/responsive-web-design-stap-1-resultaat.png" alt="Tutorial Responsive Web Design Stap 1 Resultaat"/>
+![Tutorial Responsive Web Design Stap 1 Resultaat]( {{ site.baseurl }}/images/responsive-web-design-stap-1-resultaat.png)
 
 
 ###Stap 2: Fluid Grid
