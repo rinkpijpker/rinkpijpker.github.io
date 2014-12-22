@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Whitepaper formulier</title>
-</head>
-<body>
 <?php 
 	$email = $_POST['user-email'];
 
@@ -17,5 +10,3 @@
        'double_optin'		=> false
     ));
 ?>
-</body>
-</html>
